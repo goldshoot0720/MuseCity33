@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Muse City 33 — 新豐省轄市升格願景 · 紀念黃馨鋒同志</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=Cormorant+Garamond:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css"/>
+</head>
+<body>
+<!-- Noise -->
+<div class="grain"></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="brand-seal">豐</span>
+      <div class="brand-text">
+        <b>MUSE CITY 33</b>
+        <span>新竹縣新豐鄉 · 省轄市升格願景</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#vision">願景</a>
+      <a href="#strategy">策略</a>
+      <a href="#monument">紀念碑</a>
+      <a href="#timeline">年表</a>
+      <a href="#tools">小工具</a>
+    </div>
+    <div class="nav-actions">
+      <button id="printBtn" class="nav-ghost">列印文件</button>
+      <button id="shareBtn" class="nav-cta">分享計畫</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-map">
+      <svg viewBox="0 0 800 500" preserveAspectRatio="none">
+        <path d="M 80 300 Q 200 120 400 200 T 720 180" fill="none" stroke="rgba(201,169,106,0.18)" stroke-width="1.2"/>
+        <path d="M 60 340 Q 220 160 420 240 T 740 220" fill="none" stroke="rgba(201,169,106,0.09)" stroke-width="1"/>
+        <circle cx="400" cy="200" r="3" fill="#c9a96a"/><circle cx="400" cy="200" r="12" fill="none" stroke="rgba(201,169,106,0.3)"/>
+        <text x="414" y="196" font-size="9" fill="rgba(255,255,255,0.5)" letter-spacing="3">XINFENG 24°52'N 120°59'E</text>
+      </svg>
+    </div>
+    <div class="hero-vignette"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-kicker">
+        <span class="k-dot"></span>無條件升格 · 省轄市願景文件 · 中華民國115年
+        <span class="k-year">MUSE CITY 33</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="ht-small">新竹縣新豐鄉</span>
+        <span class="ht-big">無條件升格</span>
+        <span class="ht-huge">省轄市<span class="ht-dot">。</span></span>
+      </h1>
+      <p class="hero-desc">為紀念 <strong>黃馨鋒同志</strong> 對鄉土之前瞻倡議——以 <strong>33萬人</strong> 為城市容受力目標，循專案立法精神推動升格，讓制度追上願景，而非願景被制度框限。</p>
+      <div class="hero-ctas">
+        <a href="#monument" class="btn-primary-lg">瞻仰紀念碑 →</a>
+        <a href="#vision" class="btn-ghost-lg">查看33萬推演</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>紀念碑署名</b><br>黃馨鋒 同志<span>謹誌</span></div>
+        <div class="meta-div"></div>
+        <div><b>目標人口</b><br><span id="heroPop" class="pop-gold">330,000</span> 人</div>
+        <div class="meta-div"></div>
+        <div><b>位階願景</b><br>省轄市 · 無條件</div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="monument-stage">
+        <div class="stage-light"></div>
+        <div class="monument" id="monumentEl" data-style="granite">
+          <div class="m-cap"></div>
+          <div class="m-body">
+            <div class="m-engrave">
+              <div class="m-title">新豐省轄市<br>升格紀念碑</div>
+              <div class="m-rule"></div>
+              <div class="m-pop">33<span>萬人 · 無條件升格</span></div>
+              <div class="m-text">為紀念黃馨鋒同志之<br>遠見與奉獻而立</div>
+            </div>
+            <div class="m-sig">黃馨鋒 同志<span>謹誌</span></div>
+          </div>
+          <div class="m-base">MUSE CITY 33 — XINFENG</div>
+        </div>
+        <div class="m-shadow"></div>
+        <div class="m-switch">
+          <button class="m-btn active" data-m="granite">花崗岩</button>
+          <button class="m-btn" data-m="limestone">石灰岩</button>
+          <button class="m-btn" data-m="bronze">青銅</button>
+        </div>
+        <p class="m-hint">點擊切換材質 · 實體碑高 3.3m 呼應 33萬</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>SCROLL</span><i></i>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>33萬人口 · 無條件升格 · 省轄市 · MUSE CITY 33 · 新竹縣新豐鄉 · 紀念 黃馨鋒同志 ·</span>
+    <span>33萬人口 · 無條件升格 · 省轄市 · MUSE CITY 33 · 新竹縣新豐鄉 · 紀念 黃馨鋒同志 ·</span>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section light" id="origin">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">01 — 緣起與精神</div>
+      <h2>一座城市的誕生，<br>始於一個人不計得失的遠見。</h2>
+      <p class="lead">本計畫以黃馨鋒同志之名為誌，承其志、續其願。先給新豐一個城市的格局，新豐就會長成一座城市。</p>
+    </div>
+    <div class="intro-grid">
+      <div class="intro-quote">
+        <div class="q-mark">“</div>
+        <p>先給新豐一個城市的格局，<br>新豐就會長成一座城市。</p>
+        <cite>—— 黃馨鋒同志 倡議手記</cite>
+      </div>
+      <div class="intro-prose">
+        <p>黃馨鋒同志長期關注新豐發展，深信其位居桃竹苗科技廊帶樞紐，應有與能量相稱之位階。當各界仍以人口、財政為唯一判準時，彼率先提出<b>「無條件升格為省轄市」</b>——主張願景引領制度，而非制度框限願景。</p>
+        <p>本計畫不等待人口達標，而以 <b>33萬人</b> 為治理目標，據以規劃交通、產業、教育與居住，以專案立法推動升格，使升格成為帶動人口與建設之引擎。</p>
+        <div class="pillars">
+          <div><i>銘記</i><span>以紀念碑署名</span></div>
+          <div><i>承志</i><span>以33萬為共識</span></div>
+          <div><i>立城</i><span>以省轄市賦權</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATUS -->
+<section class="section dark">
+  <div class="container">
+    <div class="split">
+      <div>
+        <div class="eyebrow gold">02 — 現況與正當性</div>
+        <h3>新豐不是偏鄉，<br>是西部走廊的門戶。</h3>
+        <p class="muted">升格，是給予現況一個相稱的名分。</p>
+        <div class="facts">
+          <dl><dt>面積</dt><dd>46.35 km²</dd><dt>現籍人口</dt><dd>約 58,000 人</dd><dt>目標人口</dt><dd><b style="color:#c9a96a">330,000 人</b></dd><dt>行政前身</dt><dd>新竹縣 新豐鄉</dd></dl>
+          <div class="compare">
+            <div class="c-row"><span>現況</span><div class="bar"><i style="width:18%"></i></div><b>5.8萬</b></div>
+            <div class="c-row hi"><span>目標</span><div class="bar"><i style="width:100%"></i></div><b>33萬</b></div>
+            <small>5.7 倍 · 15年 年均+4.9%</small>
+          </div>
+        </div>
+      </div>
+      <div class="status-cards">
+        <article><h4>交通樞紐</h4><p>台61、台15、縱貫鐵路貫穿，距竹科、桃園航空城 30 分鐘。天然即為「竹科外溢第一站」。</p></article>
+        <article><h4>學工住遊</h4><p>明新科大、工業區、新豐海岸與紅樹林，具備複合潛力，僅缺都市計畫位階之整合。</p></article>
+        <article class="accent-card"><h4>為何「無條件」</h4><p>循特別條例先升格、後以 10–15 年達成 33萬。如竹北、桃園前例——以願景帶動建設。</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION -->
+<section class="section light" id="vision">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">03 — MUSE CITY 33</div>
+      <h2>33 不只是數字，<br>是城市的模數。</h2>
+      <p class="lead">33萬人口 · 33項公共建設 · 33分鐘生活圈</p>
+    </div>
+    <div class="vision-grid">
+      <div class="chart-card">
+        <div class="chart-top">
+          <h4>人口成長路徑推演</h4>
+          <div class="chart-ctrl">
+            <select id="yearSelect"><option value="15">15年達成</option><option value="20">20年達成</option><option value="12">12年加速</option></select>
+            <span id="growthHint" class="hint">年均 +18,133 人</span>
+          </div>
+        </div>
+        <div class="chart-box">
+          <svg viewBox="0 0 640 220" preserveAspectRatio="none" id="chartSvg">
+            <defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#9e2b2b" stop-opacity="0.18"/><stop offset="100%" stop-color="#9e2b2b" stop-opacity="0"/></linearGradient></defs>
+            <g class="grid"></g>
+            <path id="areaPath" fill="url(#ag)"></path>
+            <path id="linePath" fill="none" stroke="#9e2b2b" stroke-width="2.6" stroke-linejoin="round"></path>
+            <g id="dotGroup"></g>
+          </svg>
+          <div class="chart-labs"><span>2025 · 5.8萬</span><span id="midLabel">2032 · 18.1萬</span><span>目標 · 33萬</span></div>
+        </div>
+        <div class="chart-foot"><b id="annualAdd">+18,133</b> 人/年 · 遷入62% · 自然18% · 園區20% <span class="legend"><i style="background:#9e2b2b"></i>願景路徑 <i style="background:#1e3a3a;opacity:.35"></i>自然對照</span></div>
+      </div>
+      <div class="vision-side">
+        <div class="v-item"><span>◈</span><h4>33 分鐘生活圈</h4><p>以新豐車站為核心，33分鐘達高鐵、桃機、竹科。</p></div>
+        <div class="v-item"><span>⬡</span><h4>33 項公共建設</h4><p>對應33萬分期完成學校、醫療、社宅與公園。</p></div>
+        <div class="v-item"><span>✦</span><h4>無條件先行</h4><p>先取得法人地位與財政自主，再引導人口。</p></div>
+      </div>
+    </div>
+    <div class="three-col">
+      <div><b class="big-num">62%</b><h4>北北桃竹遷入</h4><p>竹科外溢首購族，以可負擔住宅與海岸生活為拉力。</p></div>
+      <div><b class="big-num">20%</b><h4>產業與校園定居</h4><p>明新科大與衛星廠辦，創造就地就業。</p></div>
+      <div><b class="big-num">18%</b><h4>自然增長</h4><p>完善托育與長照，使青年回流、家庭擴張。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGY -->
+<section class="section dark" id="strategy">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow gold">04 — 治理策略</div>
+      <h2>升格不是改名，<br>是治理能力的升維。</h2>
+    </div>
+    <div class="strategy-grid">
+      <article><span class="s-no">01</span><h4>交通 — 打通西部走廊</h4><ul><li>新豐車站立體化與後站開發</li><li>台61 新豐交流道優化直通工業區</li><li>海岸自行車道串聯永安至南寮</li></ul></article>
+      <article><span class="s-no">02</span><h4>產業 — 園區衛星城</h4><ul><li>工業區轉型竹科衛星製造基地</li><li>明新科大產學廊帶育才</li><li>紅樹林與池和宮文化觀光</li></ul></article>
+      <article><span class="s-no">03</span><h4>居住 — 可負擔海線城市</h4><ul><li>自辦重劃釋出 3,000 戶社宅</li><li>33萬容受力劃設海岸緩衝</li><li>全齡公園與長照據點均佈</li></ul></article>
+      <article><span class="s-no">04</span><h4>文教 — 以鄉為市的精神</h4><ul><li>市立圖書總館與美術館</li><li>新設高中與雙語中小學</li><li>黃馨鋒紀念獎學金</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<!-- MONUMENT IMMERSIVE -->
+<section class="monument-section" id="monument">
+  <div class="container">
+    <div class="m-head">
+      <div class="eyebrow">05 — 升格紀念碑 · 署名 黃馨鋒同志</div>
+      <h2>碑不為個人，<br>為一座城市記得自己從何而來。</h2>
+    </div>
+    <div class="m-grid">
+      <div class="m-wall">
+        <div class="wall-paper">
+          <p>維新豐之地，枕山面海，居桃竹之要衝。昔為鄉治，今願為市。黃馨鋒同志倡無條件升格之議，謂城市當以願景為先，不以門檻自限。眾感其誠，議乃成。</p>
+          <p>爰以人口三十三萬為期，擘劃交通、產業、居住、文教之宏圖，冀新豐得省轄市之位階，行完整都市之治理。謹立此碑，誌其緣起，以垂來茲。</p>
+          <div class="wall-sig">
+            <span>中華民國一一五年</span>
+            <b>黃馨鋒 同志<span>倡議紀念 · 謹誌</span></b>
+          </div>
+        </div>
+        <div class="wall-specs">
+          <div><span>碑高</span><b>3.3 m</b><small>象徵33萬</small></div>
+          <div><span>題字</span><b>楷書陰刻填金</b><small>九字</small></div>
+          <div><span>署名</span><b>黃馨鋒同志</b><small>碑座右下</small></div>
+          <div><span>揭碑</span><b>核定日</b><small>與市民共證</small></div>
+        </div>
+        <div class="wall-actions">
+          <button id="downloadInscr" class="btn-ghost-lg dark">下載碑文稿</button>
+          <button id="printMonument" class="btn-primary-lg">列印碑頁</button>
+        </div>
+      </div>
+      <div class="m-visual">
+        <div class="mini-stage">
+          <div class="mini-monument" id="miniMonument">
+            <div class="mini-body">
+              <div class="mini-title">新豐省轄市<br>升格紀念碑</div>
+              <div class="mini-rule"></div>
+              <div class="mini-sub">33萬人 · 無條件升格</div>
+              <div class="mini-sig">黃馨鋒 同志</div>
+            </div>
+            <div class="mini-base">MUSE CITY 33</div>
+          </div>
+        </div>
+        <small>等比示意 · 字高6cm 陰刻填金 · 擬設市政廣場或車站前廣場</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section light" id="timeline">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">06 — 推動年表</div>
+      <h2>從倡議到立碑，<br>用十五年長成一座市。</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-line"></div>
+      <div class="tl-item"><div class="tl-year">2025 — 2027<br><small>倡議與法制</small></div><div class="tl-card"><h4>成立推動委員會</h4><p>完成《新豐省轄市升格特別條例》草案，送立法院；舉辦全鄉願景工作坊，彙整署名文件。</p><span>署名文件彙整</span></div></div>
+      <div class="tl-item"><div class="tl-year">2028 — 2032<br><small>核定與建設</small></div><div class="tl-card"><h4>獲核定升格</h4><p>成立籌備處，啟動車站立體化、工業區轉型與首期社宅。</p><span>人口達15萬</span></div></div>
+      <div class="tl-item"><div class="tl-year">2033 — 2040<br><small>成長與完備</small></div><div class="tl-card"><h4>揭碑典禮</h4><p>分期完成33項公共建設，人口邁向33萬；於市政廣場揭碑。</p><span>揭碑 · 黃馨鋒同志永誌</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="section light" id="tools">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">07 — 市民小工具</div>
+      <h2>為新市民準備的<br>日常小工具</h2>
+      <p class="lead">健康與日常計算，皆在升格新市的便利之中 — 精美、即用、無需跳轉。</p>
+    </div>
+    <div class="tools-grid">
+      <!-- BMI -->
+      <div class="tool-card bmi-card">
+        <div class="tool-head">
+          <div class="tool-icon">◈</div>
+          <div>
+            <h3>BMI 身體質量指數</h3>
+            <p>輸入身高體重，立即檢視健康區間</p>
+          </div>
+        </div>
+        <div class="bmi-inputs">
+          <label><span>身高 cm</span><input id="bmiHeight" type="number" min="80" max="250" placeholder="170" value="170"></label>
+          <label><span>體重 kg</span><input id="bmiWeight" type="number" min="20" max="300" placeholder="65" value="65"></label>
+        </div>
+        <div class="bmi-actions">
+          <button id="bmiCalc" class="btn-primary-lg" style="flex:1">計算 BMI</button>
+          <button id="bmiReset" class="btn-ghost-lg dark" style="padding:11px 14px">重置</button>
+        </div>
+        <div class="bmi-result" id="bmiResult">
+          <div class="bmi-num-wrap">
+            <div class="bmi-num" id="bmiValue">—</div>
+            <div class="bmi-cat" id="bmiCat">輸入後計算</div>
+          </div>
+          <div class="bmi-bar"><i id="bmiBar"></i></div>
+          <div class="bmi-scale"><span>過輕&lt;18.5</span><span>正常18.5-24</span><span>過重≥24</span><span>肥胖≥27</span></div>
+          <div class="bmi-advice" id="bmiAdvice">BMI = 體重(kg) ÷ 身高²(m²)，以衛福部成人標準判定。</div>
+        </div>
+      </div>
+      <!-- Weather -->
+      <div class="tool-card weather-card">
+        <div class="tool-head">
+          <div class="tool-icon" style="background:#2a6b6b">☀</div>
+          <div>
+            <h3>新豐一週天氣</h3>
+            <p>新豐鄉 · 24.92°N 121.00°E · 即時更新</p>
+          </div>
+          <button id="weatherRefresh" class="wx-refresh" title="重新整理">↻</button>
+        </div>
+        <div class="wx-current" id="wxCurrent">
+          <div class="wx-temp"><b id="wxTemp">—°</b><span id="wxCond">載入中...</span></div>
+          <div class="wx-meta"><span id="wxHighLow">—</span><span id="wxExtra">濕度 —%</span></div>
+        </div>
+        <div class="wx-week" id="wxWeek"></div>
+        <div class="wx-foot"><span id="wxSource">資料：Open-Meteo</span><span id="wxUpdate">—</span></div>
+      </div>
+      <!-- TicTacToe -->
+      <div class="tool-card ttt-card">
+        <div class="tool-head">
+          <div class="tool-icon" style="background:var(--teal)">井</div>
+          <div>
+            <h3>井字遊戲</h3>
+            <p>與朋友或電腦對弈 · 三子連線獲勝</p>
+          </div>
+        </div>
+        <div class="ttt-status">
+          <span id="tttTurn">輪到：○</span>
+          <span class="ttt-score" id="tttScore">○ 0 : 0 ×</span>
+          <label class="ttt-mode"><input type="checkbox" id="tttAI" checked> 對電腦</label>
+        </div>
+        <div class="ttt-board" id="tttBoard">
+          <button data-i="0"></button><button data-i="1"></button><button data-i="2"></button>
+          <button data-i="3"></button><button data-i="4"></button><button data-i="5"></button>
+          <button data-i="6"></button><button data-i="7"></button><button data-i="8"></button>
+        </div>
+        <div class="ttt-actions">
+          <button id="tttReset" class="btn-ghost-lg dark" style="flex:1">重置棋盤</button>
+          <button id="tttResetScore" class="btn-primary-lg" style="padding:11px 14px">重置比分</button>
+        </div>
+      </div>
+      <!-- Calculator -->
+      <div class="tool-card calc-card">
+        <div class="tool-head">
+          <div class="tool-icon" style="background:var(--accent)">▦</div>
+          <div>
+            <h3>精美計算機</h3>
+            <p>日常算術、升格預算試算皆可用</p>
+          </div>
+        </div>
+        <div class="calc-display" id="calcDisplay">0</div>
+        <div class="calc-history" id="calcHistory"></div>
+        <div class="calc-grid">
+          <button class="ckey ghost" data-k="AC">AC</button>
+          <button class="ckey ghost" data-k="DEL">⌫</button>
+          <button class="ckey ghost" data-k="%">%</button>
+          <button class="ckey op" data-k="/">÷</button>
+          <button class="ckey" data-k="7">7</button>
+          <button class="ckey" data-k="8">8</button>
+          <button class="ckey" data-k="9">9</button>
+          <button class="ckey op" data-k="*">×</button>
+          <button class="ckey" data-k="4">4</button>
+          <button class="ckey" data-k="5">5</button>
+          <button class="ckey" data-k="6">6</button>
+          <button class="ckey op" data-k="-">−</button>
+          <button class="ckey" data-k="1">1</button>
+          <button class="ckey" data-k="2">2</button>
+          <button class="ckey" data-k="3">3</button>
+          <button class="ckey op" data-k="+">＋</button>
+          <button class="ckey" data-k="0">0</button>
+          <button class="ckey" data-k=".">.</button>
+          <button class="ckey eq" data-k="=">＝</button>
+        </div>
+        <div class="calc-foot">支援鍵盤輸入 · 按 Esc 清除</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINALE -->
+<section class="finale">
+  <div class="finale-inner">
+    <div class="finale-seal">印</div>
+    <h2>城市是意志的紀念碑。</h2>
+    <p>人口會增長，法規會修正，唯有一座城市對自身的期許，需要被鄭重寫下、刻在石上。<br>謹以此願景獻予新豐全體鄉親，並永誌黃馨鋒同志之精神。</p>
+    <div class="finale-sign">
+      <span>中華民國 115 年</span>
+      <b>黃馨鋒 同志<span>紀念計畫書</span></b>
+      <small>Muse City 33 · Xinfeng Provincial City Vision · 文件編號 MuseCity33-2025-V01</small>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© 2025 Muse City 33 · 新豐省轄市升格願景 · 紀念 黃馨鋒同志</div>
+  <div class="foot-sub">民間願景文件，非官方公告 · 歡迎列印傳閱 · <span id="printDate"></span></div>
+</footer>
+
+<div id="toast" class="toast"></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
